@@ -1,0 +1,35 @@
+python
+indentation
+variables
+walrus
+integers
+float
+boolean
+loops
+list
+tuple
+dictionary
+conditional
+arguments
+class
+object
+parent
+child
+function
+exceptions
+escape sequence
+type casting
+comment
+whitespace
+monty python
+guido van Rossum
+append
+index
+turtle
+lambda
+numpy
+django
+flask
+machine learning
+
+
