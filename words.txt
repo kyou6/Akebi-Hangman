@@ -1,11 +1,35 @@
-the big bang
-the pillow feels soft
-odd one out
-press conference
-show me the money
-time to go home
-that was easy
-hangman is cool
-zoologist
-quadruplets
-the sky is blue
+python
+indentation
+variables
+walrus
+integers
+float
+boolean
+loops
+list
+tuple
+dictionary
+conditional
+arguments
+class
+object
+parent
+child
+function
+exceptions
+escape sequence
+type casting
+comment
+whitespace
+monty python
+guido van Rossum
+append
+index
+turtle
+lambda
+numpy
+django
+flask
+machine learning
+
+
