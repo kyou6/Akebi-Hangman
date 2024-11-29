@@ -34,6 +34,12 @@ hangmanPics = [pygame.image.load('resources/hangman/1.png'),
 
 limbs = 0
 
+# Load the sound
+click_sound = pygame.mixer.Sound("resources/sound/pop.mp3")  # Load the sound file
+
+# Load the background music
+pygame.mixer.music.load("resources/sound/bg.mp3")  # Load the background music file
+pygame.mixer.music.play(-1)  # Play the music in a loop
 
 def redraw_game_window():
     global guessed
@@ -107,6 +113,8 @@ def end(winner=False):
     global limbs
     win.fill(WHITE)  # Set background color to white
 
+    pygame.mixer.music.stop()  # Stop the background music when the game ends
+
     if winner:
         # Display "YOU WIN" message
         win_label = lost_font.render('YOU WIN', 1, BLACK)  # Create the win label
@@ -179,6 +187,10 @@ def reset():
     guessed = []
     word = randomWord()
 
+    # Reload and play the background music
+    pygame.mixer.music.load("resources/sound/bg.mp3")  # Load the background music file
+    pygame.mixer.music.play(-1)  # Play the music in a loop
+
 #MAINLINE
 
 
@@ -211,6 +223,7 @@ while inPlay:
             clickPos = pygame.mouse.get_pos()
             letter = buttonHit(clickPos[0], clickPos[1])
             if letter != None:
+                click_sound.play()  # Play the sound when a letter is clicked
                 guessed.append(chr(letter))
                 buttons[letter - 65][4] = False
                 if hang(chr(letter)):
