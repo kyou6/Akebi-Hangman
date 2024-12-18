@@ -4,7 +4,7 @@ Akebi-Hangman is a visually enhanced fork of the classic Hangman game from [tech
 
 This version incorporates a revamped UI, custom anime-inspired graphics, and enhanced audio effects for a more immersive gaming experience.
 
-<img width=100% src="https://github.com/user-attachments/assets/1130b412-fffe-48ab-bbab-8e34842f91f2">
+<img width=100% src="https://github.com/user-attachments/assets/0ffa3899-0eb4-44ec-8970-9400f27d634b">
 
 
 ## Table of Contents
